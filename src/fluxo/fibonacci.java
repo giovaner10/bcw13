@@ -6,12 +6,12 @@ public class fibonacci {
     public static void main(String[] args) {
 
         /**
-         * fibonacci
+         * fibonacci -
          */
         int a = 0;
         int b = 1;
 
-        for(int i = 0; i <10 ; i++){
+        for(int i = 0; i < 10 ; i++){
             System.out.println(a);
             int aux = a + b;
             a = b;
