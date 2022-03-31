@@ -21,13 +21,14 @@ public class fibonacci {
         /**
          * primo
          */
-        for(int i = 1; i <=100 ; i++){
+        for(int i = 2; i <=100 ; i++){
             int cont = 0;
 
             for (int j = 2; j <= i/2 ; j++ ){
 
                 if( i % j == 0){
                     cont ++;
+                    break;
                 }
             }
 
@@ -42,9 +43,13 @@ public class fibonacci {
         int num = Integer.parseInt(JOptionPane.showInputDialog("Informar valor"));
         int fatorial = 1;
 
+
         for (int i = num; i > 0; i--){
             fatorial *= i;
         }
-        System.out.println("fatorial de " + num + " = " + fatorial);
+        System.out.println( num + "! = " + fatorial);
     }
 }
+
+
+
