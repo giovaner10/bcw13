@@ -8,15 +8,7 @@ public class fibonacci {
         /**
          * fibonacci -
          */
-        int a = 0;
-        int b = 1;
-
-        for(int i = 0; i < 10 ; i++){
-            System.out.println(a);
-            int aux = a + b;
-            a = b;
-            b = aux;
-        }
+        extracted();
 
         /**
          * primo
@@ -48,6 +40,18 @@ public class fibonacci {
             fatorial *= i;
         }
         System.out.println( num + "! = " + fatorial);
+    }
+
+    private static void extracted() {
+        int a = 0;
+        int b = 1;
+
+        for(int i = 0; i < 10 ; i++){
+            System.out.println(a);
+            int aux = a + b;
+            a = b;
+            b = aux;
+        }
     }
 }
 
